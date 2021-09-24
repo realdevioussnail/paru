@@ -527,7 +527,7 @@ async fn prepare_build(
         if !ask(config, &tr!("Proceed to review?"), true) {
             return Ok(BuildInfo::stop());
         }
-    } else if !ask(config, &tr!("Proceed with installation?"), true) {
+    } else if !ask(config, &tr!("\nProceed with installation?"), true) {
         return Ok(BuildInfo::stop());
     }
 
